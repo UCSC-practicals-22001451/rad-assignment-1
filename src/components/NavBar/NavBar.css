@@ -9,8 +9,15 @@
   background-color: #f8f9fa;
   color: #333;
 }
-
+.navbar-light a {
+  color: #333;
+}
 .navbar-dark {
   background-color: #333;
   color: white;
+}
+.active-link a {
+  color: #007bff;
+  font-weight: 800; /* Makes the text bold */
+  /*text-decoration: underline; /* Underlines the text */
 }

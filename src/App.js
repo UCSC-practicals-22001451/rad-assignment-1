@@ -1,7 +1,11 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useTheme } from "./context/ThemeContext";
 import NavBar from "./components/NavBar/NavBar";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
+const Home = lazy(() => import("./pages/HomePage"));
+const About = lazy(() => import("./pages/AboutPage"));
+const Contact = lazy(() => import("./pages/ContactPage"));
 
 function App() {
   const { theme } = useTheme();
@@ -11,14 +15,18 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <Router>
+      <div className="App">
         <NavBar />
-      </header>
-    </div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
+      </div>
+    </Router>
   );
 }
 

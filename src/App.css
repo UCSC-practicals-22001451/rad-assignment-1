@@ -7,3 +7,26 @@
   background-color: #282c34;
   color: #fff;
 }
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.active-link {
+  border-bottom: 2px solid yellow;
+}
