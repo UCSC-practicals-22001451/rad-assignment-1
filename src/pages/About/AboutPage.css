@@ -1,0 +1,191 @@
+/* Base variables for light theme */
+:root {
+  --background-color: var(--light-grey-color);
+  --text-color: var(--dark-grey-color);
+  --button-text-color: #ffffff;
+  --primary-color: #ffa600;
+  --secondary-color: #6c757d;
+  --light-grey-color: #f8f9fa;
+  --dark-grey-color: #343a40;
+  --medium-grey-color: #6c757d;
+  --white-color: #ffffff;
+  --main-color: #2a2824;
+}
+
+/* Dark theme overrides */
+.dark-theme {
+  --background-color: #3d3d3dae;
+  --text-color: #e0e0e0;
+  --button-text-color: #000000;
+  --primary-color: #9f6133;
+  --secondary-color: #444;
+  --light-grey-color: #242424;
+  --dark-grey-color: #e0e0e0;
+  --medium-grey-color: #bcbcbc;
+  --white-color: #2e2e2e;
+  --main-color: #dd9d26;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Rest of your CSS, ensuring to use the variables defined above */
+
+.about {
+  padding: 3rem 6rem;
+  background-color: var(--light-grey-color);
+}
+
+.about h1 {
+  margin-bottom: 20px;
+  color: var(--dark-grey-color);
+  text-align: center;
+}
+
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 5rem 0;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.left-arrow {
+  position: absolute;
+  left: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 10px;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  transition: transform 0.5s ease-in-out;
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 20em;
+}
+
+.slide img {
+  max-width: 300px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide div {
+  max-width: 500px;
+}
+
+.slide h2 {
+  color: var(--dark-grey-color);
+}
+
+.slide p {
+  color: var(--medium-grey-color);
+}
+
+.slide ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: var(--medium-grey-color);
+}
+
+.sub-heading {
+  margin-left: 3rem;
+  text-align: center;
+}
+.slide .heading,
+h2 {
+  color: var(--main-color);
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 70%;
+  margin: 0 auto 4rem auto;
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member {
+  display: contents;
+}
+
+.team-member img {
+  grid-column: 1;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  justify-self: end;
+  margin-right: 2rem;
+  clip-path: circle(50% at 50% 50%);
+  border: 2px solid var(--main-color);
+}
+
+.member-info {
+  grid-column: 2;
+  border-left: 2px solid var(--main-color);
+  padding-left: 20px;
+}
+
+.member-info p {
+  margin: 0;
+  color: var(--dark-grey-color);
+}
+
+.about-section {
+  margin-bottom: 4rem;
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.about-section h2 {
+  color: var(--main-color);
+}
+
+.about-section p,
+.about-section ul {
+  color: var(--medium-grey-color);
+}
+
+.about-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.about-section blockquote {
+  margin: 0;
+  padding: 1rem;
+  background-color: #e9ecef;
+  border-left: 5px solid var(--main-color);
+  font-style: italic;
+  color: var(--dark-grey-color);
+}

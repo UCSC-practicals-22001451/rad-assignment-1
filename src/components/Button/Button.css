@@ -1,0 +1,15 @@
+.Button-light {
+  background-color: #f8f9fa;
+  color: #333;
+}
+.Button-light:hover {
+  background-color: #e2e6ea;
+}
+
+.Button-dark {
+  background-color: #333;
+  color: white;
+}
+.Button-dark:hover {
+  background-color: #1a1a1a;
+}

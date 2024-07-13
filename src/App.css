@@ -4,29 +4,26 @@
 }
 
 .dark-theme {
-  background-color: #282c34;
+  background-color: #1c1e23;
   color: #fff;
 }
 
-.nav-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+.App {
+  padding: 0 0 0 50px;
 }
-
-.nav-links {
-  list-style: none;
-  display: flex;
+:root {
+  --primary-color: #dc4e43;
+  --secondary-color: #cf641c;
+  --background-color: #f7f7f7;
+  --text-color: #333;
+  --input-border-color: #ccc;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --info-color: #555;
 }
-
-.nav-links li {
-  margin: 0 1rem;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-}
-
-.active-link {
-  border-bottom: 2px solid yellow;
+:root {
+  --main-color: #333; /* Blue color */
+  --dark-grey-color: #333; /* Dark grey color */
+  --medium-grey-color: #555; /* Medium grey color */
+  --light-grey-color: #f7f7f7; /* Light grey color */
+  --white-color: #fff; /* White color */
 }

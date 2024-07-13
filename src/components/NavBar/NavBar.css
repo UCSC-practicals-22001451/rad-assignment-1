@@ -1,23 +1,80 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+  width: 50px;
+  display: grid;
+  padding: 0 0 1rem 0;
+  grid-auto-rows: 2rem;
+  grid-template-rows: 3fr 2fr 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: width 0.1s ease;
+  z-index: 10;
 }
-
+.navbar:hover {
+  width: 180px;
+}
 .navbar-light {
-  background-color: #f8f9fa;
+  background-color: #e1e1e1;
   color: #333;
 }
-.navbar-light a {
-  color: #333;
+.navbar-light .nav-link {
+  color: #000000;
 }
 .navbar-dark {
-  background-color: #333;
+  background-color: #000000;
   color: white;
 }
-.active-link a {
+.navbar-dark .nav-link {
+  color: white;
+}
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  border: none;
+}
+a.active-link {
   color: #007bff;
-  font-weight: 800; /* Makes the text bold */
-  /*text-decoration: underline; /* Underlines the text */
+  font-weight: 800;
+  text-decoration: none;
+  border: none;
+}
+.navbar-buttons {
+  padding: 2rem 0;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.theme-toggle-wrapper {
+  grid-row-start: 3;
+  display: flex;
+  align-items: center;
+}
+/* .nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+} */
+.nav-item-content {
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Centers items vertically */
+  gap: 8px; /* Optional: Adds some space between the icon and the name */
+}
+.link-name {
+  visibility: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  transition: width 0.3s ease, visibility 0.3s;
+}
+.nav-item {
+  display: flex;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.link-name.visible {
+  visibility: visible;
+  width: auto;
 }
