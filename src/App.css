@@ -20,12 +20,12 @@
   --input-border-color: #ccc;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --info-color: #555;
-  --main-color: #333; /* Blue color */
-  --dark-grey-color: #333; /* Dark grey color */
-  --medium-grey-color: #555; /* Medium grey color */
-  --light-grey-color: #f7f7f7; /* Light grey color */
-  --white-color: #fff; /* White color */
-  --button-color: #dd9d26;
+  --main-color: #333;
+  --dark-grey-color: #333;
+  --medium-grey-color: #555;
+  --light-grey-color: #f7f7f7;
+  --white-color: #fff;
+  --button-color: #e0a943;
 }
 /* Dark theme overrides */
 .dark-theme {
@@ -41,4 +41,9 @@
   --white-color: #2e2e2e;
   --main-color: #dd9d26;
   --button-color: #dd9d26;
+}
+h1,
+div {
+  -webkit-user-select: none; /* -webkit-user-select for Safari support */
+  user-select: none;
 }

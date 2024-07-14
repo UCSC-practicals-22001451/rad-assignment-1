@@ -7,6 +7,16 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .home .hero {
@@ -19,7 +29,7 @@
   max-width: 600px;
   margin: auto;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds drop shadow to text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .text-shade {
   position: relative;

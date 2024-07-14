@@ -14,7 +14,7 @@ const NavBar = () => {
 
   const navLinks = [
     { path: "/", name: "Home", exact: true, icon: <HomeIcon /> },
-    { path: "/about", name: "About", icon: <InfoIcon /> },
+    { path: "/about/slideshow", name: "About", icon: <InfoIcon /> },
     { path: "/contact", name: "Contact Us", icon: <ContactMailIcon /> },
   ];
 

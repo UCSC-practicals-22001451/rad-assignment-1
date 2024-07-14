@@ -26,6 +26,7 @@ function HomePage() {
       const targetDiv = document.getElementById("targetDiv");
       targetDiv.style.display = "flex";
       targetDiv.scrollIntoView({ behavior: "smooth" });
+      localStorage.setItem("userDetails", JSON.stringify(userDetails));
     } else {
       setName("");
       alert("Please enter a valid name.");
@@ -33,7 +34,7 @@ function HomePage() {
   };
 
   const handleMoreInfoClick = () => {
-    navigate("/about");
+    navigate("/about/slideshow");
   };
   const handleContactUsClick = () => {
     navigate("/contact");
