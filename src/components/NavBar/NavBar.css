@@ -118,6 +118,7 @@ a.active-link {
   .link-name {
     visibility: visible;
     width: auto;
+    font-size: small;
     display: none; /* Hide text on mobile by default */
   }
   .navbar:hover .link-name {
