@@ -106,6 +106,9 @@
 
 /* General styles for small screens */
 @media (max-width: 768px) {
+  .contact form {
+    margin-top: 3rem;
+  }
   .contact {
     padding: 1.5rem;
   }
