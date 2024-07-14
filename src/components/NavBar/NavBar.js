@@ -1,4 +1,4 @@
-import React, { useState, startTransition } from "react";
+import React, { useState } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
@@ -8,19 +8,9 @@ import InfoIcon from "@mui/icons-material/Info";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import Switch from "@mui/material/Switch";
 
-const NavBar = ({ isLoading, startLoading, stopLoading }) => {
+const NavBar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleToggleTheme = async () => {
-    startLoading();
-    setTimeout(() => {
-      startTransition(() => {
-        toggleTheme();
-      });
-      stopLoading();
-    }, 0);
-  };
 
   const navLinks = [
     { path: "/", name: "Home", exact: true, icon: <HomeIcon /> },
@@ -58,7 +48,7 @@ const NavBar = ({ isLoading, startLoading, stopLoading }) => {
           <Switch
             className="theme-toggle"
             checked={theme === "dark"}
-            onChange={handleToggleTheme}
+            onChange={toggleTheme}
             name="themeToggle"
             color="default"
           />
