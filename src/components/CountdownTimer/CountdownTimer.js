@@ -23,7 +23,7 @@ const TimeUnit = styled.div`
 
 function CountdownTimer() {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2024-12-31T23:59:59"); // Hardcoded target date and time
+    const targetDate = new Date("2024-08-31T23:59:59"); // Hardcoded target date and time
     const difference = +targetDate - +new Date();
     let timeLeft = {};
 
