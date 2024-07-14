@@ -90,8 +90,8 @@ function HomePage() {
               <h2>The next session of training recruits starts in:</h2>
               <CountdownTimer />
               <p>
-                Hurry up and if you are interested, send us an email with your
-                details.
+                Hurry up and if you are interested!! We have limited slots
+                available.
               </p>
               <button onClick={handleContactUsClick}>Contact Us to Join</button>
             </section>
