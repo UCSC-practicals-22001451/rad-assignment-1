@@ -1,10 +1,7 @@
-/* Apply variables */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
-
-/* Rest of your CSS, ensuring to use the variables defined above */
 
 .about {
   padding: 3rem 6rem;
@@ -84,10 +81,12 @@ body {
   margin-left: 3rem;
   text-align: center;
 }
+
 .slide .heading,
 h2 {
   color: var(--main-color);
 }
+
 .team {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -161,6 +160,7 @@ h2 {
   font-style: italic;
   color: var(--dark-grey-color);
 }
+
 .about-main {
   padding: 3rem 6rem;
 }
@@ -190,4 +190,62 @@ h2 {
 .about-main nav ul li a.active {
   background-color: var(--button-color);
   color: white;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem;
+  }
+
+  .slide {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slide img {
+    margin: 0 0 20px 0;
+  }
+
+  .team {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .team-member img {
+    margin: 0 auto;
+  }
+
+  .member-info {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-main {
+    padding: 2rem;
+  }
+
+  .about-main nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-section {
+    padding: 1rem;
+  }
+
+  .sub-heading {
+    margin-left: 0;
+  }
+  #about-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-main nav ul li a {
+    padding: 0.3rem;
+  }
 }

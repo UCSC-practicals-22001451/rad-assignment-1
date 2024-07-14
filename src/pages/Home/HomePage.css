@@ -100,3 +100,96 @@ button {
 .next-session-section {
   margin-bottom: 2rem;
 }
+@media (max-width: 768px) {
+  .home {
+    padding: 20px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .home .hero {
+    padding: 20px;
+  }
+
+  .home .hero-text {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .home form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .home button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .content-section {
+    padding: 20px;
+  }
+
+  .greeting-section,
+  .next-session-section {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .greeting-section h2,
+  .next-session-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .greeting-section p,
+  .next-session-section p {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Styles for extra small screens */
+@media (max-width: 480px) {
+  .home {
+    padding: 10px;
+  }
+
+  .home .hero {
+    padding: 10px;
+  }
+
+  .home .hero-text {
+    padding: 5px;
+  }
+
+  .content-section {
+    padding: 10px;
+  }
+
+  .greeting-section,
+  .next-session-section {
+    padding: 10px;
+  }
+
+  .greeting-section h2,
+  .next-session-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .greeting-section p,
+  .next-session-section p {
+    font-size: 0.9rem;
+  }
+}

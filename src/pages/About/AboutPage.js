@@ -13,7 +13,7 @@ function AboutPage() {
       <h1 className="heading" style={{ marginBottom: "3rem" }}>
         About Our Club
       </h1>
-      <nav>
+      <nav id="about-nav">
         <ul>
           <li>
             <NavLink

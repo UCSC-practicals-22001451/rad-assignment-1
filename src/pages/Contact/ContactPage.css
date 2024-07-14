@@ -101,3 +101,93 @@
     padding: 1rem;
   }
 }
+/* Mobile Responsive CSS */
+
+/* General styles for small screens */
+@media (max-width: 768px) {
+  .contact {
+    padding: 1.5rem;
+  }
+
+  .contact form {
+    padding: 1rem;
+  }
+
+  .form-group {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon-placeholder {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: calc(100% - 44px); /* Adjusted to make room for the icon */
+    margin: 0;
+  }
+
+  .contact button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-info {
+    padding: 1rem;
+  }
+}
+
+/* Styles for extra small screens */
+@media (max-width: 480px) {
+  .contact {
+    padding: 1rem;
+  }
+
+  .contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact form {
+    padding: 0.5rem;
+  }
+
+  .form-group {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon-placeholder {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: calc(100% - 44px); /* Adjusted to make room for the icon */
+    font-size: 14px;
+  }
+
+  .contact button {
+    font-size: 14px;
+  }
+
+  .contact-info {
+    padding: 0.5rem;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+  }
+}

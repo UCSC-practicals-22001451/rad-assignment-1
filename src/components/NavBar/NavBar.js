@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
@@ -11,6 +11,16 @@ import Switch from "@mui/material/Switch";
 const NavBar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const navLinks = [
     { path: "/", name: "Home", exact: true, icon: <HomeIcon /> },
@@ -35,7 +45,9 @@ const NavBar = () => {
               <div className="nav-item-content">
                 <div className="nav-item">{link.icon}</div>
                 <span
-                  className={isMenuOpen ? "link-name visible" : "link-name"}>
+                  className={
+                    isMenuOpen && !isMobile ? "link-name visible" : "link-name"
+                  }>
                   {link.name}
                 </span>
               </div>
@@ -53,7 +65,10 @@ const NavBar = () => {
             color="default"
           />
         </div>
-        <span className={isMenuOpen ? "link-name visible" : "link-name"}>
+        <span
+          className={
+            isMenuOpen && !isMobile ? "link-name visible" : "link-name"
+          }>
           {theme === "light" ? "Light Theme" : "Dark Theme"}
         </span>
       </div>
