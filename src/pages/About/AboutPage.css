@@ -254,6 +254,6 @@ h2 {
     padding: 0.4rem;
   }
   .about-main nav ul {
-    margin: 0;
+    margin-bottom: 1rem;
   }
 }
