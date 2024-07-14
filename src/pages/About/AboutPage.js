@@ -7,7 +7,7 @@ const slides = [
     title: "Our History",
     content:
       "Founded in 1990, our club has been dedicated to training individuals to become skilled emergency firefighters. Over the past three decades, we have grown from a small group of passionate volunteers to a comprehensive training organization, helping countless individuals prepare for and respond to emergencies.",
-    img: "/images/2.jpeg",
+    img: "/images/1.jpg",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const slides = [
     title: "Our Values",
     content:
       "<ul><li><strong>Bravery:</strong> Encouraging courage in the face of danger.</li><li><strong>Excellence:</strong> Committing to the highest standards of training and performance.</li><li><strong>Community:</strong> Building strong bonds within our team and with the communities we serve.</li><li><strong>Integrity:</strong> Acting with honesty and accountability in all our actions.</li></ul>",
-    img: "/images/2.jpeg",
+    img: "/images/original.jpg",
   },
 ];
 
